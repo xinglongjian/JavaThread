@@ -19,7 +19,7 @@ public class Consumer implements Runnable {
 				!message.equals("DONE");message=drop.take()){
 			System.out.format("MESSAGE RECEIVED: %s%n",message);
 			try {
-				Thread.sleep(random.nextInt(5000));
+				Thread.sleep(random.nextInt(15000));
 			} catch (Exception e) {
 				// TODO: handle exception
 			}

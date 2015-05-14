@@ -17,6 +17,10 @@ public class Producer implements Runnable {
 		            "Mares eat oats",
 		            "Does eat oats",
 		            "Little lambs eat ivy",
+		            "A kid will eat ivy too",
+		            "Mares eat oats",
+		            "Does eat oats",
+		            "Little lambs eat ivy",
 		            "A kid will eat ivy too"
 		        };
 		 Random random=new Random();
@@ -25,7 +29,7 @@ public class Producer implements Runnable {
 			 System.out.println("producer drop put!");
 			 drop.put(importantInfo[i]);
 			 try {
-				Thread.sleep(random.nextInt(5000));
+				Thread.sleep(random.nextInt(15000));
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
